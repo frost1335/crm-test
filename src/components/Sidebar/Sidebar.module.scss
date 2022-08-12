@@ -1,0 +1,31 @@
+.Sidebar {
+  position: relative;
+  z-index: 12;
+  height: 100%;
+  box-shadow: 0 0 30px 1px rgba($color: #000000, $alpha: 0.2);
+}
+
+.sidebarOverlay {
+  transition: border-color 0.12s ease-out, opacity 0.12s ease-out;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  width: 110px;
+  background-color: #fff;
+}
+
+.mainMenu {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-right: 1px solid #f3f3f3;
+  padding-right: 0;
+}
+
+.container {
+  height: 100%;
+  overflow: hidden;
+}

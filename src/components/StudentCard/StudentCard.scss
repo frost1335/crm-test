@@ -1,0 +1,331 @@
+.student-card {
+  .student-title {
+    font-size: 28px;
+    color: rgba($color: #000000, $alpha: 0.9);
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .student-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .student-left {
+      width: 32%;
+      box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+      padding: 20px;
+      position: relative;
+
+      h3 {
+        font-size: 20px;
+        color: rgba($color: #000000, $alpha: 0.9);
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      span.student-id {
+        display: block;
+        font-size: 13px;
+        color: rgba($color: #444, $alpha: 0.6);
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-weight: 400;
+        color: rgba($color: #000000, $alpha: 0.9);
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 11px;
+        color: rgba($color: #444, $alpha: 0.6);
+        font-weight: 400;
+        margin-bottom: 8px;
+
+        span {
+          font-size: 12px;
+          color: rgba($color: #000000, $alpha: 0.9);
+        }
+      }
+
+      .balance-tags {
+        display: flex;
+        flex-grow: 1;
+        margin-bottom: 20px;
+
+        p {
+          padding: 2px 8px;
+          border: #8479e1 1px solid;
+          font-size: 10px;
+          font-weight: 600;
+          border-radius: 30px;
+          color: #8479e1;
+          cursor: pointer;
+        }
+      }
+
+      .right-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        button {
+          width: 34px;
+          height: 34px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          border-width: 1px;
+          border-style: solid;
+          border-radius: 50%;
+          font-size: 14px;
+          transition: 0.1s all;
+          margin-bottom: 8px;
+          opacity: 0.99;
+          cursor: pointer;
+
+          &.note {
+            border-color: #4e944f;
+            color: #4e944f;
+
+            &:hover {
+              background: #4e944f;
+              color: #fff;
+            }
+          }
+          &.edit {
+            border-color: #f8b400;
+            color: #f8b400;
+
+            &:hover {
+              background: #f8b400;
+              color: #fff;
+            }
+          }
+          &.sms {
+            border-color: #035397;
+            color: #035397;
+
+            &:hover {
+              background: #035397;
+              color: #fff;
+            }
+          }
+
+          &.payment {
+            border-color: #28a745;
+            color: #28a745;
+
+            &:hover {
+              background: #28a745;
+              color: #fff;
+            }
+          }
+
+          &.delete {
+            border-color: #b20600;
+            color: #b20600;
+
+            &:hover {
+              background: #b20600;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .student-right {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba($color: #000000, $alpha: 0.9);
+        margin-bottom: 10px;
+      }
+
+      .group-box {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+        margin-bottom: 15px;
+
+        .box-header {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #d7d7d7;
+          margin-bottom: 20px;
+
+          .part-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            span {
+              background: rgba($color: #444, $alpha: 0.2);
+              border-radius: 30px;
+              padding: 2px 8px;
+              font-size: 10px;
+            }
+            a {
+              display: block;
+              width: 50px;
+              font-size: 12px;
+              color: rgba($color: #000000, $alpha: 0.8);
+            }
+          }
+
+          .part-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            span,
+            p {
+              width: 90px;
+              color: rgba($color: #444, $alpha: 0.6);
+              font-size: 12px;
+            }
+          }
+        }
+
+        .box-body {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          p {
+            color: rgba($color: #444, $alpha: 0.6);
+            font-size: 12px;
+
+            span {
+              color: rgba($color: #000000, $alpha: 0.9);
+            }
+          }
+        }
+      }
+
+      .payment-box {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+        margin-bottom: 15px;
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+
+          .date {
+            width: 22%;
+          }
+
+          .quanty {
+            width: 23%;
+            font-weight: 400;
+            opacity: 0.7;
+
+            &.minus {
+              color: #ea5e5e;
+            }
+            &.plus {
+              color: #007944;
+            }
+          }
+
+          .comment {
+            width: 25%;
+          }
+
+          .employee {
+            width: 30%;
+          }
+
+          th {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: start;
+            margin-bottom: 10px;
+          }
+
+          tr {
+            margin-bottom: 10px;
+          }
+
+          td,
+          th {
+            padding: 10px;
+          }
+
+          tr:nth-child(even) {
+            background: rgba($color: #000000, $alpha: 0.1);
+          }
+
+          td.date {
+            font-size: 14px;
+            color: rgba($color: #000000, $alpha: 0.7);
+          }
+
+          td.puanty {
+            font-size: 14px;
+            color: rgba($color: #000000, $alpha: 0.7);
+          }
+
+          td.comment {
+            .lesson {
+              font-size: 14px;
+              color: rgba($color: #000000, $alpha: 0.8);
+
+              span {
+                font-size: 10px;
+                background: rgba($color: #444, $alpha: 0.2);
+                border-radius: 5px;
+                border: none;
+                padding: 2px 4px;
+              }
+            }
+
+            .date {
+              width: 100%;
+              font-size: 13px;
+              color: rgba($color: #000000, $alpha: 0.7);
+              display: flex;
+            }
+          }
+
+          td.employee {
+            width: 100%;
+            // flex-grow: 1;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: flex-start;
+
+            p {
+              font-size: 14px;
+              color: rgba($color: #000000, $alpha: 0.9);
+            }
+
+            span {
+              font-size: 12px;
+              color: rgba($color: #444, $alpha: 0.7);
+            }
+          }
+        }
+      }
+    }
+  }
+}

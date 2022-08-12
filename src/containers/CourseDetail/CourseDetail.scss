@@ -1,0 +1,100 @@
+.detail-header {
+  width: 100%;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+
+.course-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .detail-left {
+    box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+    width: 32%;
+
+    .left-img {
+      width: 100%;
+      position: relative;
+
+      .header-buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+
+        button {
+          width: 34px;
+          height: 34px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #fff;
+          color: #fff;
+          border-radius: 50%;
+          font-size: 14px;
+          transition: 0.1s all;
+          margin-right: 6px;
+          cursor: pointer;
+
+          &:hover {
+            background: #fff;
+            color: #8479e1;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .left-body {
+      padding: 28px;
+
+      h4 {
+        font-size: 13px;
+        color: rgba($color: #000000, $alpha: 0.4);
+        font-weight: 300;
+        margin-bottom: 4px;
+      }
+
+      span {
+        display: block;
+        font-size: 13px;
+        color: rgba($color: #000000, $alpha: 0.8);
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .detail-right {
+    width: 65%;
+
+    .detail-tab {
+      button {
+        color: rgba($color: #444, $alpha: 0.7);
+        text-transform: none;
+      }
+
+      .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected,
+      button:hover {
+        color: #8479e1;
+      }
+
+      .css-1aquho2-MuiTabs-indicator {
+        background: #8479e1;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.Layout {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .layoutTop {
+    width: 100%;
+  }
+  .layoutBottom {
+    width: 100%;
+    height: 89%;
+    display: flex;
+    flex-grow: 1;
+
+    main {
+      position: relative;
+      width: 100%;
+      background: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+    }
+    .mainContent {
+      height: 83vh;
+    }
+  }
+}

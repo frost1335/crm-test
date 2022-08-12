@@ -1,0 +1,41 @@
+.menuList {
+  margin-bottom: 1rem;
+}
+
+.menuList li.menu-item {
+  position: relative;
+
+  &.active::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #8479e1;
+    border-radius: 15px;
+    position: absolute;
+  }
+}
+
+.menuList li a {
+  height: 90px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 1px solid #f3f3f3;
+  color: #212121;
+  transition: background 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menuIcon {
+  font-size: 32px;
+  line-height: 42px;
+  color: #212121;
+}

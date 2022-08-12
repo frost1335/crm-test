@@ -1,0 +1,14 @@
+export { default as Leads } from "./Leads";
+export { default as Students } from "./Students";
+export { default as Teachers } from "./Teachers";
+export { default as Groups } from "./Groups";
+export { default as Finance } from "./Finance";
+export { default as Analytics } from "./Analytics";
+export { default as Settings } from "./Settings";
+export { default as Dashboard } from "./Dashboard";
+export { default as Courses } from "./Courses";
+export { default as Profile } from "./Profile";
+export { default as StudentDetail } from "./StudentDetail";
+export { default as GroupsDetail } from "./GroupsDetail";
+export { default as Auth } from "./Auth";
+export { default as NotFound } from "./NotFound";

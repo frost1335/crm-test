@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid #d7d7d7;
+
+  .footer-box {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    .footer-text {
+      display: flex;
+      align-items: center;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        margin-right: 18px;
+        font-weight: 300;
+
+        i {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}

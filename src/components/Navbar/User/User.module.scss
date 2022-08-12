@@ -1,0 +1,55 @@
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user .dropdown {
+  color: #212529;
+}
+
+.dropdown button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #212529;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown button span:last-of-type img {
+  display: block;
+  width: 40px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+.dropdown ul.dropdownMenu {
+  position: absolute;
+  transform: translate3d(123px, 35px, 0px);
+  top: 30px;
+  right: 140px;
+  will-change: transform;
+  z-index: 1040;
+  font-size: 0.8rem;
+  border-radius: 0.1rem;
+  background: #fff;
+  border-color: rgba(33, 33, 33, 0.15);
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dropdown ul.dropdownMenu .dropdownItem {
+  padding: 0.75rem 1.5rem;
+  color: #212121;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.dropdown ul.dropdownMenu hr {
+  color: rgba(0, 0, 0, 0.15);
+}

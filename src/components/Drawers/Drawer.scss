@@ -1,0 +1,138 @@
+.drawer-box {
+  width: 100%;
+  height: 100%;
+
+  .drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-bottom: 1px solid #d7d7d7;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba($color: #000000, $alpha: 0.8);
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  .drawer-form {
+    padding: 25px 15px;
+
+    .input-text-form {
+      margin-top: 10px;
+      margin-bottom: 35px;
+      margin-right: 20px;
+      font-size: 12px;
+
+      .MuiTextField-root {
+        width: 100%;
+      }
+
+      label {
+        font-size: 15px;
+
+        &.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+          top: -10px;
+        }
+
+        &.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+          color: #8479e1;
+        }
+      }
+
+      input {
+        padding: 7px 10px;
+        font-size: 14px;
+        color: rgba($color: #000000, $alpha: 0.7);
+      }
+
+      .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+        .MuiOutlinedInput-notchedOutline {
+        border-color: #8479e1;
+      }
+    }
+
+    .input-radio-form {
+      margin-top: 20px;
+      margin-bottom: 35px;
+      font-size: 12px;
+      margin-right: 20px;
+
+      .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+        color: #8479e1;
+      }
+
+      .css-u4tvz2-MuiFormLabel-root.Mui-focused {
+        color: #8479e1;
+      }
+
+      .MuiSvgIcon-root {
+        font-size: 18px;
+      }
+    }
+
+    .input-select-form {
+      margin-top: 20px;
+      margin-bottom: 35px;
+      font-size: 12px;
+      margin-right: 20px;
+
+      label {
+        font-size: 15px;
+
+        &.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+          top: -8px;
+        }
+      }
+
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 7px 10px;
+        font-size: 14px;
+      }
+    }
+
+    .input-file {
+      label {
+        display: none;
+      }
+      legend {
+        opacity: 0;
+        span {
+          display: none;
+          opacity: 0;
+        }
+      }
+    }
+
+    .form-button {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      margin-bottom: 25px;
+
+      button {
+        background: rgba($color: #8479e1, $alpha: 0.9);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 35px;
+        color: #fff;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.1s;
+
+        &:hover {
+          background: rgba($color: #8479e1, $alpha: 1);
+        }
+      }
+    }
+  }
+}

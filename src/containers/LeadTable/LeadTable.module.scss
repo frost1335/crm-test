@@ -1,0 +1,250 @@
+.leadTable {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header.header {
+    display: flex;
+    align-items: flex-start;
+
+    .headerInput {
+      width: 300px;
+      margin-right: 25px;
+
+      input {
+        padding: 10px 8px;
+        padding-bottom: 13px;
+      }
+
+      label {
+        top: -6px;
+      }
+
+      legend {
+        height: 0px;
+      }
+    }
+
+    .select {
+      padding: 11.5px 8px;
+    }
+
+    .MuiSelect-select {
+      padding: 0;
+    }
+
+    .byCourse {
+      padding: 11.5px 8px !important;
+
+      div {
+        padding: 0;
+      }
+    }
+
+    .MuiInputBase-root {
+      padding: 0;
+    }
+  }
+
+  .menuToggle {
+    background: red !important;
+  }
+
+  .body {
+    height: 92%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    position: relative;
+
+    .formBox {
+      display: flex;
+      flex-direction: column;
+
+      .formBlock {
+        display: none;
+
+      
+      }
+    }
+
+    button {
+      position: absolute;
+      width: 320px;
+      padding: 5px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #ffcd38;
+      left: 20px;
+      top: 60px;
+      cursor: pointer;
+      border: 2.5px #f8f8f8 solid;
+
+      i {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+    .item {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4px;
+      padding-right: 19px;
+      overflow: overlay;
+      border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+      /* scrollbar custom */
+
+      &::-webkit-scrollbar-track {
+        width: 7px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba($color: #555, $alpha: 0.8);
+      }
+
+      /* scrollbar custom */
+
+      h2 {
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      &:first-of-type {
+        h2 {
+          margin-bottom: 70px;
+        }
+      }
+
+      .DropBox {
+        width: 350px;
+        background: transparent;
+        padding: 15px 7px;
+        background: rgba($color: #8479e1, $alpha: 0.5);
+        border-radius: 10px;
+
+        &.box {
+          background: rgba($color: #47b5ff, $alpha: 0.4);
+        }
+
+        .emptyText {
+          width: 100%;
+          font-size: 16px;
+          color: #444;
+          font-weight: 400;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .dropItem {
+          user-select: none;
+          overflow: auto;
+          padding: 5px;
+          background: rgba($color: #f1eee9, $alpha: 0.8);
+          display: flex;
+          justify-content: space-between;
+          border-radius: 7px;
+          margin-bottom: 6px;
+          font-size: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &.dragging {
+            background: rgba($color: #f6f54d, $alpha: 0.6);
+          }
+
+          .itemStaff {
+            display: flex;
+            align-items: flex-start;
+
+            span {
+              font-size: 11px;
+              text-transform: uppercase;
+              line-height: 15px;
+              color: rgba($color: #444, $alpha: 0.8);
+              padding: 2px;
+              background: rgba($color: #000000, $alpha: 0.15);
+              border-radius: 4px;
+              cursor: pointer;
+              transition: 0.1s;
+
+              &:hover {
+                background: rgba($color: #000000, $alpha: 0.1);
+              }
+            }
+          }
+
+          .itemInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: 5px;
+
+            span {
+              color: rgba($color: #444, $alpha: 1);
+              font-size: 12px;
+              line-height: 18px;
+              margin-bottom: 3px;
+            }
+
+            p {
+              font-size: 13px;
+              font-weight: 500;
+              color: rgba($color: #242f9b, $alpha: 0.8);
+            }
+          }
+
+          .itemEnd {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .itemSetting {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 4px;
+              background: transparent;
+              opacity: 0;
+              transition: 0.1s all;
+              cursor: pointer;
+
+              i {
+                font-size: 22px;
+              }
+
+              &:hover {
+                background: rgba($color: #444, $alpha: 0.3);
+              }
+            }
+          }
+
+          &:hover {
+            .itemSetting {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
